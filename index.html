@@ -6,7 +6,132 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="script.js"></script>
-    <style src="style.css"></style>
+    <style>
+        
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            width: 100%;
+            height: 100px;
+            /* background-color: gray; */
+            background-image: linear-gradient(to right, red, black);
+            padding: 5px 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header img {
+            height: 50px;
+        }
+
+        header nav ul {
+            max-width: 500px;
+            height: auto;
+            display: flex;
+            gap: 20px;
+            justify-content: space-evenly;
+        }
+
+        header nav ul li {
+            list-style: none;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            font-size: 14pt;
+            font-weight: bold;
+            text-transform: capitalize;
+            color: whitesmoke;
+        }
+
+        header span.menu-emoji {
+            display: none;
+            font-size: 20pt;
+        }
+
+        section.content {
+            width: 100%;
+            height: auto;
+            display: flex;
+            padding: 20px;
+            /* background-color: gray; */
+            background-image: linear-gradient(to top, black, orange);
+            margin-top: 10px;
+            color: white;
+            flex-wrap: wrap;
+        }
+
+        section.content div.content-item {
+            display: flex;
+            width: 25%;
+            flex: 25%;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        div.content-item span {
+            font-size: 24pt;
+        }
+
+        div.content-item p {
+            text-align: center;
+        }
+
+        /* untuk tab / ipad */
+        @media screen and (max-width: 800px) {
+            header {
+                position: relative;
+                height: 80px;
+            }
+            header nav ul{
+                display: none;
+                position: absolute;
+                background-color: rgb(56, 70, 56);
+                flex-direction: column;                
+                align-items: flex-end;
+                top: 0;
+                right: 0;
+                margin-top: 80px;
+                height: 300px;
+                width: 150px;
+                gap: 10px;
+                padding: 0px 20px;
+            }
+
+            header nav ul.clicked {
+                display: flex;
+            }
+
+            header span.menu-emoji {
+                display: block;
+                cursor: pointer;
+            }
+
+            section.content div.content-item {
+                flex: 50%;
+            }
+        }
+
+        /* untuk mobile */
+        @media screen and (max-width: 600px) {
+            section.content div.content-item {
+                flex: 100%;
+            }
+        }
+
+    
+    </style>
 </head>
 <body>
     
