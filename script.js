@@ -7,5 +7,4 @@ document.addEventListener("DOMContentLoaded", () => {
         document.querySelector(".menu-nav").classList.toggle("clicked");
 
     })
-
 })
