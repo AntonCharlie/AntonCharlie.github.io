@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Charlie Antoni Yusup's Github Pages</title>
     <script src="script.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,9 +16,8 @@
         <nav>
             <ul class="menu-nav">
                 <li><a href="">home</a></li>
-                <li><a href="">projects</a></li>
-                <li><a href="">contact</a></li>
-                <li><a href="">about</a></li>
+                <li><a href="#projects">projects</a></li>
+                <li><a href="#contact">contact</a></li>
             </ul>
         </nav>
 
@@ -25,54 +25,87 @@
             ⚡
         </span>
     </header>
-
-    <!-- <section class="content">
-        <div class="content-item">
-            <span>🗿</span>    
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, excepturi.</p>
-        </div>
-        <div class="content-item">
-            <span>🗿</span>    
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, excepturi.</p>
-        </div>
-        <div class="content-item">
-            <span>🗿</span>    
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, excepturi.</p>
-        </div>
-        <div class="content-item">
-            <span>🗿</span>    
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, excepturi.</p>
-        </div>
-    </section> -->
     
-    <h1>
-        Hello, github pages!
+    <h1 class="hello">
+        Welcome!
     </h1>
-    <p>Welcome</p>
     <hr>
     <!-- <br> -->
-    <section class="main">
-        <aside class="left">
-            <!-- <img src="glacier.jpg" alt="" height="350px"> -->
-            <p>
-                Name : Charlie Antoni Yusup <br>
-                Age : 16  <br>
-                Sex : Male <br>
-                <br>
-                <p class="currently">Currently studying at Ignatius Global School Palembang</p>
-            </p>
-        </aside>
-        <article>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum quam fugiat vero adipisci mollitia minima, consectetur voluptas dolorum dignissimos, perspiciatis deserunt nesciunt officiis sit sed fugit rerum pariatur ex! Ab.
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo praesentium sapiente adipisci cumque animi mollitia, beatae unde eius corrupti? Perferendis ad nihil dicta ea eos, officiis consequuntur laudantium voluptatibus tempore, quos officia libero. Cupiditate, adipisci sapiente! Iste ea, maxime numquam eveniet quae aperiam suscipit voluptate cupiditate sunt delectus, animi atque.
-            </p>
-            <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta dignissimos eveniet ipsum saepe mollitia molestias amet facilis id veniam minima iste eius, non, libero consequuntur deleniti blanditiis cupiditate, quasi quae? Magnam, dolores repudiandae in fuga deserunt soluta quo earum. Itaque beatae iure molestiae, aliquid non atque obcaecati sapiente iste facere maiores? Distinctio culpa officia, minus itaque voluptatibus pariatur quaerat sunt incidunt minima corporis id aliquid inventore dolor sed quos doloremque fugiat rem. Quas similique ea mollitia voluptatibus, sit fuga odit, deserunt modi quod dolorem eum obcaecati quidem unde dolor ducimus quos facere quo, non excepturi enim nobis facilis placeat? Blanditiis.
-            </p>
-        </article>
+    <section class="home" id="home">
+        <div class="main-home">
+            <h1>Hi!</h1>
+            <div class="intro">
+                <p class="im">I'm</p>
+                <p class="name">Charlie Antoni Yusup</p>
+            </div>
+            <p>Currently studying at Ignatius Global School Palembang.</p>
+            <article>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum similique nihil facilis consectetur ullam, perspiciatis assumenda vel eligendi accusamus? Sapiente autem, tempora, sed fugiat assumenda corporis hic laudantium dolorum sit placeat non! Ducimus, dolor quis sit quos mollitia eum, voluptas odio facilis enim, ipsum commodi. In id dicta optio aliquam.</article>
+        </div>
     </section>
+    
+    <section class="projects" id="projects">
+        <h1>My Projects</h1>
+        <br>
+        <div class="content-items">
+            <div class="content-item">
+                <video width="300" height="200" autoplay loop muted controls>
+                    <source src="assets/treasure.mp4">
+                </video>            
+                <p>Finding treasure Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit earum vitae ratione officia dolorum nesciunt facere aliquam qui dignissimos perferendis!</p>
+            </div>
+            <div class="content-item">
+                <video width="300" height="200" autoplay loop muted controls>
+                    <source src="assets/snake.mp4">
+                </video>
+                <p>Snake game Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat corrupti voluptatibus ab autem quos temporibus sed repellendus quo. Fugit, expedita!</p>
+            </div>
+            <div class="content-item">
+                <video width="300" height="200" autoplay loop muted controls>
+                    <source src="assets/battleship.mp4">
+                </video>
+                <p>Battleship Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus accusamus nulla eos quis illo voluptatem numquam corporis similique asperiores eaque?</p>
+            </div>
+            <div class="content-item">
+                <video width="300" height="200" autoplay loop muted controls>
+                    <source src="assets/hangman.mp4">
+                </video>
+                <p>Hangman using React Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab voluptatibus assumenda enim sapiente ipsa reiciendis inventore corporis qui animi consequatur.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="footer" id="contact">
+        <div class="blank">
+
+        </div>
+        <div class="contact">
+            <h1>CONTACTS</h1>
+            <div class="icons">
+                <a href="https://github.com/AntonCharlie">
+                    <div class="github">
+                        <box-icon type='logo' name='github'></box-icon>
+                    </div>
+                    <p>AntonCharlie</p>
+                </a>
+                <a href="mailto:charlieantoniyusup@gmail.com">
+                    <div class="email">
+                        <box-icon type='solid' name='envelope'></box-icon>
+                    </div>
+                    <p>charlieantoniyusup@gmail.com</p>
+                </a>
+                <a href="tel:+6282362321132">
+                    <div class="phone">
+                        <box-icon name='phone'></box-icon>
+                    </div>
+                    <p>082362321132</p>
+                </a>
+            </div>
+        </div>
+        
+    </section>
+
+    <div class="copy">
+        <P>Copyright © 2023 Charlie Antoni Yusup</P>
+    </div>
 </body>
 </html>
